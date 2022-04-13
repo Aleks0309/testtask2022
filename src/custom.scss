@@ -1,0 +1,137 @@
+@font-face {
+        font-family: "Nunito";
+        src: url("./assets/font/Nunito-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+};
+
+//Variables
+$input-height: auto;
+$form-group-margin-bottom: 50px;
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1170px
+);
+
+//Classes
+
+.invalid-feedback {
+        position: absolute;
+        text-align: left;
+}
+.form-control{
+
+}
+
+h1 {
+        font-size: 40px!important;
+        line-height: 40px!important;
+};
+
+span {
+        font-size: 16px!important;
+        line-height: 26px!important;
+};
+
+//Media
+
+@media screen and (min-width: 768px) {
+        .header-menu{
+                padding: 13px 32px;
+        };
+        .main__item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 380px;
+                margin: 40px auto;
+        };
+        .get-wrapper{
+                padding: 0 32px;
+                .users-wrapper {
+                        margin: 50px 0 34px;
+                }
+        };
+        .user {
+                max-width: calc(50% - 8px)!important;
+        };
+};
+
+@media screen and (min-width: 1024px) {
+        .header-menu{
+                padding: 13px 60px;
+        };
+        .main{
+                height: 650px;
+        };
+        .get-wrapper{
+                padding: 0 60px;
+                .users-wrapper {
+                        margin: 50px auto 21px;
+                }
+        };
+        .user {
+                max-width: calc(100%/3 - 19.4px)!important;
+                margin-bottom: 29px;
+                &:nth-child(3n-1) {
+                        margin-right: 29px;
+                        margin-left: 29px;
+                };
+        };
+};
+
+@media screen and (min-width: 1170px) {
+        .header-menu{
+                padding: 13px 0;
+        };
+};
+
+@media screen and (max-width: 768px) {
+        .user {
+                margin-bottom: 20px;
+        };
+};
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+        .user {
+                margin-bottom: 16px;
+                &:nth-child(odd) {
+                       margin-right: 16px;
+                };
+        };
+};
+@media svreen and (min-width: 1200px) {
+        .container-xl, .container-lg, .container-md, .container-sm, .container {
+                max-width: 1170px!important;
+        }
+}
+
+
+//Input type Number
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+input[type="number"] {
+        -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+        -moz-appearance: number-input;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+//Import Bootstrap
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
