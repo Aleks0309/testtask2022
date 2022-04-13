@@ -6,6 +6,10 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import VueScrollTo from 'vue-scrollto'
 import VueTheMask from 'vue-the-mask'
 
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 import './custom.scss'
 
 Vue.use(VueTheMask)

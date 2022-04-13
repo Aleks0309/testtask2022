@@ -5,15 +5,7 @@
         font-weight: 400;
 };
 
-//Variables
-$input-height: auto;
-$form-group-margin-bottom: 50px;
-$container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1170px
-);
+
 
 //Classes
 
@@ -21,8 +13,8 @@ $container-max-widths: (
         position: absolute;
         text-align: left;
 }
-.form-control{
-
+.form-group{
+        margin-bottom: 50px!important;
 }
 
 h1 {
@@ -35,7 +27,12 @@ span {
         line-height: 26px!important;
 };
 
-//Media
+//
+@media screen and (min-width: 1200px) {
+        .container, .container-sm, .container-md, .container-lg, .container-xl {
+                max-width: 1170px !important;
+        }
+}
 
 @media screen and (min-width: 768px) {
         .header-menu{
@@ -129,9 +126,3 @@ input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none;
         margin: 0;
 }
-
-//Import Bootstrap
-@import '~bootstrap/dist/css/bootstrap.css';
-@import '~bootstrap-vue/dist/bootstrap-vue.css';
-@import '~bootstrap/scss/bootstrap.scss';
-@import '~bootstrap-vue/src/index.scss';
